@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>L11 Assignment</title>
+    <!-- Load jQuery 1.9.1 minified from Google CDN -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            //User clicked top of a collapsible panel.
+            $('button').click(function () {
+                //Switch between the two background colors.
+                $('body').toggleClass('reverse');
+               
+            });
+        });
+    </script>
+    <style>
+        .reverse {
+            background: black;
+            color: White;
+        }
+    </style>
+</head>
+<body>
+    <button>Reverse It</button>
+    <p style="font-size: 300%">This is just some sample text.</p>
+</body>
+</html>
